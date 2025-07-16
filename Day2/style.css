@@ -1,0 +1,12 @@
+h1{
+    color: orangered;
+}
+.btn{
+    padding: 5px;
+    background: #232323;
+    color: white;
+}
+form > button{
+    background: orange;
+    color: white;
+}
