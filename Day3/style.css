@@ -258,16 +258,16 @@ details[open] summary{
     flex-direction: column;
     width: 100%;
 }
-.v_accordion_item{
+.v_accordion-item{
     transition: max-height 0.3s ease;
     overflow: hidden;
     max-height: 60px;
    
 }
-.v_accordion_item:hover{
+.v_accordion-item:hover{
     max-height: 300px;
 }
-.v_accordion_header {
+.v_accordion-header {
     height: 60px;
     display: flex;
     align-items: center;
@@ -280,7 +280,7 @@ details[open] summary{
   .v_item_2 { background: #E3FEF7; }
   .v_item_3 { background: #FFC7ED; }
 
-.v_accordion_content {
+.v_accordion-content {
     padding: 20px;
     box-sizing: border-box;
 }
