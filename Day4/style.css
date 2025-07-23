@@ -26,6 +26,9 @@ body{
     width: 18vmin;
     background: #FAF7F3;
     border: 2px solid wheat;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #232323;
     border-radius: 1rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 
@@ -37,4 +40,21 @@ body{
     font-size: 1rem;
     border-radius: 0.7rem;
     border: none;
+}
+#new-btn{
+    padding: 1rem;
+    font-size: 1rem;
+    color: wheat;
+    background: #232323;
+    border-radius: 0.7rem;
+    border: none;
+}
+#msg{
+    color: red;
+    font-weight: bolder;
+    font-family: fantasy;
+    font-size: 10vmin;
+}
+.hide{
+    display: none;
 }
