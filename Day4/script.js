@@ -12,6 +12,7 @@ let msg = document.querySelector("#msg");
        if (turnO == true )
        {
          box.innerText = "O"
+         box.style.color = 'green';
          turnO = false;
        }
        else{
@@ -23,6 +24,31 @@ let msg = document.querySelector("#msg");
        checkWinner();
      })
  })
+
+ const resetGame = () => {
+    turnO = true;
+    enableBox()
+    msgContainer.classList.add("hide")
+ }
+
+const disableBox = () => {
+    for(let box of boxes){
+        box.disabled = true;
+    }
+}
+
+const enableBox = () => {
+    for(box of boxes){
+        box.disabled = false;
+        box.innerText = '';
+    }
+}
+
+const showWinner = (i)=>{
+    msg.innerText = `winner is ${i}`;
+    msgContainer.classList.remove("hide");
+    disableBox();
+}
 
  const checkWinner= () =>{
     for(pattern of winPatterns){
@@ -38,8 +64,18 @@ let msg = document.querySelector("#msg");
 
         if(pos1Value != "" && pos1Value != "" && pos3Value != ""){
             if(pos1Value === pos2Value && pos2Value === pos3Value){
-                console.log("Winner")
+                console.log("Winner");
+                showWinner(pos1Value)
             }
+        else{
+
+             msg.innerText = `Game is Draw`;
+             msgContainer.classList.remove("hide");
+             disableBox()
+        }
         }
     }
- }
+ };
+
+gBtn.addEventListener('click',resetGame);
+resetBtn.addEventListener('click',resetGame);

@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: #345676;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    width: 60vmin;
+    height: 60vmin;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.2vmin;
+}
+#box{
+    height: 18vmin;
+    width: 18vmin;
+    background: rgba(233, 182, 16, 0.87);
+    font-size: 3rem ;
+    font-weight: bold;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: rgba(192, 29, 7, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    transition: all 0.3s;
+
+}
+#box:hover{
+    transform: scale(1.07);
+    box-shadow: rgba(255, 9, 9, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+}
+.b_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2vmin;
+}
+#newGame{
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: 2px solid #232323;
+    background: #000;
+    color: wheat;
+    transition: all 0.3s;
+}
+#resetGame{
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: 2px solid #232323;
+    background: #000;
+    color: wheat;
+    transition: all 0.3s;
+   
+}
+#resetGame:hover{
+    transform: scale(1.07);
+    box-shadow: rgba(212, 195, 195, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+}
+#newGame:hover{
+    transform: scale(1.07);
+    box-shadow: rgba(212, 195, 195, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+}
+#msg{
+    font-size: 10vmin;
+    color: maroon;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.hide{
+    display: none;
+}
